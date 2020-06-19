@@ -20,6 +20,7 @@ require('./models/Post')
 app.use(express.json())
 app.use(require('./routes/auth'))
 app.use(require('./routes/post'))
+app.use(require('./routes/user'))
 
 //server connection
 app.listen(PORT, () => {
